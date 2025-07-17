@@ -1,12 +1,16 @@
+import { expect, test, vi } from 'vitest'; 
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-jest.mock('./assets/logo.png', () => '');
+
+vi.mock('./assets/logo.png', () => ({
+  default: ''
+}));
 
 test('renders blog header', () => {
   render(<App />);
-  const heading = screen.getByText(/my blog/i);
+  const heading = screen.getByText(/manuel's blog/i);
   expect(heading).toBeInTheDocument();
 });
