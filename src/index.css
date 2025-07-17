@@ -1,0 +1,61 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+small {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+aside img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
