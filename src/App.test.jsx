@@ -1,9 +1,7 @@
-import { expect, test, vi } from 'vitest'; 
-import '@testing-library/jest-dom';
+import { test, expect, vi } from 'vitest'; 
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
-
 
 vi.mock('./assets/logo.png', () => ({
   default: ''
